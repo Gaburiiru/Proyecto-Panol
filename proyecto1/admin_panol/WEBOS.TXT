@@ -1,0 +1,14 @@
+ <script src="../js/push.min.js"></script>
+
+
+<script>
+		Push.create("notificacion",{
+			body: "te llego una notificacion",
+			icon: "img/logo.png",
+			timeout: 4000,
+			onClick: function () {
+				window.location="https://nickersoft.github.io/push.js/";
+				this.close();
+			}
+		});
+	</script>
